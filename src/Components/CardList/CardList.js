@@ -41,6 +41,7 @@ console.log('page is', page)
       keyExtractor={keyExtractor}
       data={data}
       onEndReached={onEnd}
+      onEndReachedThreshold={1}
     />
   );
 };

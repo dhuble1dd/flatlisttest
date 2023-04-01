@@ -96,10 +96,14 @@ android {
     namespace "com.flatlisttest"
     defaultConfig {
         applicationId "com.flatlisttest"
+        //minSdkVersion 21
+        //targetSdkVersion 30
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
+        missingDimensionStrategy 'react-native-camera', 'general' 
+        multiDexEnabled true
     }
 
     splits {
@@ -153,6 +157,8 @@ dependencies {
     implementation("com.facebook.react:react-android")
 
     implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.0.0")
+    
+    implementation "com.android.support:multidex:2.0.1"
 
     debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}")
     debugImplementation("com.facebook.flipper:flipper-network-plugin:${FLIPPER_VERSION}") {
