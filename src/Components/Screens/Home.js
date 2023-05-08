@@ -23,6 +23,12 @@ export const Home = () => {
             <TouchableOpacity onPress={() => handleNavigate('QRCode-Scaner')}>
                 <Text style={styles.qr}> QScanner </Text>
             </TouchableOpacity>
+            <TouchableOpacity onPress={() => handleNavigate('Barcode-Scaner')}>
+                <Text style={styles.bc}> Barcode </Text>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => handleNavigate('Barcode-List')}>
+                <Text style={styles.bc}> Bc-list </Text>
+            </TouchableOpacity>
         </View>
     )
 }

@@ -6,10 +6,11 @@ import { Provider } from 'react-redux';
 import CardList from "../CardList/CardList";
 import { View } from "react-native";
 
+export const  store = createStore(reducer, applyMiddleware(thunk));
 
 export const CardScreen = () => {
 
-    const store = createStore(reducer, applyMiddleware(thunk));
+    
 
     return (
         <Provider store={store}>

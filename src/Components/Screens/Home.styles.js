@@ -6,7 +6,7 @@ export const useStyles = () => {
         () => 
         StyleSheet.create({
             home: {
-                flex: 1,
+                
                 flexDirection: 'row',
                 justifyContent: 'space-evenly',
                 //alignItems: 'center',
@@ -29,6 +29,15 @@ export const useStyles = () => {
                 //width: '100%',
                 color: '#ADD8E6',
                 backgroundColor: 'red',
+                fontSize: 24,
+                borderRadius: 25,
+            },
+            bc: {
+                //paddingTop: '100%',
+                //height: '100%',
+                //width: '100%',
+                color: 'yellow',
+                backgroundColor: 'pink',
                 fontSize: 24,
                 borderRadius: 25,
             }

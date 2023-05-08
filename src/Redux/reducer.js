@@ -1,6 +1,9 @@
 const INITIAL_STATE = {
     page: 1,
-    posts: []
+    posts: [],
+    codesList: [],
+    code: '',
+
 };
 
 const reducer = (state = INITIAL_STATE, action) => {
@@ -21,6 +24,20 @@ const reducer = (state = INITIAL_STATE, action) => {
 
         case 'UPDATE_ON_END': {
             return { ...state, page: state.page + 1}
+        }
+
+        case 'FILL_CODESLIST': {
+            return { 
+                ...state,
+                codesList: [...state.codesList, action.payload]
+            }
+        }
+
+        case 'UPDATE_CODE': {
+            return {
+                ...state,
+                code: action.payload
+            }
         }
 
         default: {

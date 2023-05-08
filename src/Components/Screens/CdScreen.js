@@ -1,16 +1,12 @@
 import React from "react";
-import { ScanScreen } from "../QRCodeScanner/ScanScreen";
-import { useNavigate } from "@react-navigation/native"
 import { Provider } from "react-redux";
 import { store } from "./CardSreen";
+import { CodeScreen } from "../QRCodeScanner/CodeScreen";
 
-export const QRScreen = () => {
-
+export const CdScreen = () => {
     return (
         <Provider store={store}>
-            <ScanScreen />
+            <CodeScreen/>
         </Provider>
-
     )
 }
-
