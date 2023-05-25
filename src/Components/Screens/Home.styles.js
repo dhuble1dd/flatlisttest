@@ -6,7 +6,6 @@ export const useStyles = () => {
         () => 
         StyleSheet.create({
             home: {
-                
                 flexDirection: 'row',
                 justifyContent: 'space-evenly',
                 //alignItems: 'center',

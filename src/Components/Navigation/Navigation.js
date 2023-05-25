@@ -6,6 +6,7 @@ import { Home } from "../Screens/Home";
 import { BCScreen } from "../Screens/BCScreen";
 import { CdScreen } from "../Screens/CdScreen";
 import { BcListScreen } from "../Screens/BcListScreen";
+import { LngScreen } from "../Screens/LngScreen";
 
 
 export const Navigation = () => {
@@ -19,6 +20,7 @@ export const Navigation = () => {
             <Stack.Screen name="Barcode-Scaner" component={BCScreen} />
             <Stack.Screen name="CodeScreen" component={CdScreen} />
             <Stack.Screen name="Barcode-List" component={BcListScreen} />
+            <Stack.Screen name="Lng" component={LngScreen} />
         </Stack.Navigator>
     )
 
